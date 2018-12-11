@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testjb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tD5-zI-bm5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="city-1284260_1280" translatesAutoresizingMaskIntoConstraints="NO" id="Tcy-O8-Xn2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="0s8-vy-bl6"/>
+                                    <constraint firstAttribute="height" constant="647" id="Ucs-XF-S41"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5J-bg-hjo">
+                                <rect key="frame" x="137" y="505" width="100" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Púlsame"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Gf-wT-bHi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS-11-mola-mucho" translatesAutoresizingMaskIntoConstraints="NO" id="imk-Uf-Qt6">
+                                <rect key="frame" x="16" y="40" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="4ti-j8-2kn"/>
+                                    <constraint firstAttribute="height" constant="128" id="bB6-wr-ZtI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tcy-O8-Xn2" firstAttribute="bottom" secondItem="TBY-s7-hvp" secondAttribute="bottom" id="BhB-7y-RQe"/>
+                            <constraint firstItem="TBY-s7-hvp" firstAttribute="bottom" secondItem="C5J-bg-hjo" secondAttribute="bottom" constant="132" id="Eno-pc-Duu"/>
+                            <constraint firstItem="Tcy-O8-Xn2" firstAttribute="top" secondItem="TBY-s7-hvp" secondAttribute="top" id="FZc-jW-deh"/>
+                            <constraint firstItem="C5J-bg-hjo" firstAttribute="leading" secondItem="TBY-s7-hvp" secondAttribute="leading" constant="137" id="GOg-wz-vGQ"/>
+                            <constraint firstItem="imk-Uf-Qt6" firstAttribute="leading" secondItem="TBY-s7-hvp" secondAttribute="leading" constant="16" id="Ohd-oq-4rB"/>
+                            <constraint firstItem="TBY-s7-hvp" firstAttribute="trailing" secondItem="imk-Uf-Qt6" secondAttribute="trailing" constant="16" id="Xl0-DF-lhj"/>
+                            <constraint firstItem="C5J-bg-hjo" firstAttribute="top" secondItem="imk-Uf-Qt6" secondAttribute="bottom" constant="337" id="kTA-Q9-TZa"/>
+                            <constraint firstItem="imk-Uf-Qt6" firstAttribute="top" secondItem="TBY-s7-hvp" secondAttribute="top" constant="20" id="tN5-PP-W8g"/>
+                            <constraint firstItem="imk-Uf-Qt6" firstAttribute="top" secondItem="TBY-s7-hvp" secondAttribute="top" constant="20" id="wxq-Ld-7Ub"/>
+                            <constraint firstItem="C5J-bg-hjo" firstAttribute="top" secondItem="imk-Uf-Qt6" secondAttribute="bottom" constant="337" id="xy1-07-75e"/>
+                            <constraint firstItem="TBY-s7-hvp" firstAttribute="trailing" secondItem="C5J-bg-hjo" secondAttribute="trailing" constant="138" id="zhF-1u-aEE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TBY-s7-hvp"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Tcy-O8-Xn2" id="5jD-Xi-xNB"/>
+                        <outlet property="pressButton" destination="C5J-bg-hjo" id="9vT-uo-P1c"/>
+                        <outlet property="titleImageView" destination="imk-Uf-Qt6" id="bsF-Ui-n8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="city-1284260_1280" width="426" height="284"/>
+        <image name="iOS-11-mola-mucho" width="253" height="38"/>
+    </resources>
+</document>
